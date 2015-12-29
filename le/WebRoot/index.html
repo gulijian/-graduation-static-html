@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>首页</title>
+	<meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+	<!-- page css -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<!-- page js -->
+	<script type="text/javascript"  src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript"  src="js/wow.min.js"></script>
+  	
+  </head>
+  <body>
+     <!-- header navbar start  -->
+  	 <header>
+  	 	<nav class="navbar">
+  	 		<div class="navbar_item navbar_left">
+  	 			<a href="index.jsp">
+  	 				<img alt="logo" src="images/logo.png">
+  	 			</a>
+  	 		</div>
+  	 		<div class="navbar_item navbar_right">
+  	 			<ul>
+  	 				<li><a href="javascript:void(0)" class="active">首页</a></li>
+  	 				<li><a href="javascript:void(0)">相册</a></li>
+  	 				<li><a href="javascript:void(0)">博客</a></li>
+  	 				<li><a href="html/contact.html">日志</a>
+  	 					<ul class="wow fadeInUp" data-wow-duration="500ms">
+  	 						<li><a href="javascript:void(0)">首页</a></li>
+		  	 				<li><a href="javascript:void(0)">相册</a></li>
+		  	 				<li><a href="javascript:void(0)">博客</a></li>
+  	 					</ul>
+  	 				</li>
+  	 				<li><a href="javascript:void(0)">旅行</a>
+  	 					<ul class="wow fadeInUp" data-wow-duration="500ms">
+  	 						<li><a href="javascript:void(0)">首页</a></li>
+		  	 				<li><a href="javascript:void(0)">相册</a></li>
+		  	 				<li><a href="javascript:void(0)">博客</a></li>
+  	 					</ul>
+  	 				</li>
+  	 			</ul>
+  	 		</div>
+  	 	</nav>
+  	 </header>
+  	 <!-- header navbar end  -->
+  	 
+  	 <!-- section banner start -->
+  	 <section id="banner">
+  	 	 <!-- banner-inner start -->
+  	 	 <div class="banner-inner">
+  	 	 	 <div class="item" style="background-image:url(images/banner/bg1.jpg);display:block;">
+ 	 	 		 <div class="container">
+ 	 	 			  <div class="description">
+ 	 	 			  	 <h1>我的校园</h1> 
+ 	 	 			  	 <span>成立于多少年前，校风校史优良1</span>
+ 	 	 			  </div>
+ 	 	 			  <div class="slide_img">
+ 	 	 			  	 <img alt="me" src="images/banner/img1.png" height="400px" width="300px;"/>
+ 	 	 			  </div>
+ 	 	 	     </div>
+ 	 	 	 </div>
+ 	 	 	 <div class="item" style="background-image:url(images/banner/bg2.jpg);display:none;" >
+ 	 	 		<div class="container">
+ 	 	 			 <div class="description">
+ 	 	 			  	 <h1>我的校园</h1> 
+ 	 	 			  	 <span>成立于多少年前，校风校史优良2</span>
+ 	 	 			  </div>
+ 	 	 			  <div class="slide_img">
+ 	 	 			  	 <img alt="me" src="images/banner/img2.png" height="400px" width="300px"/>
+ 	 	 			  </div>
+ 	 	 	     </div>
+ 	 	 	 </div>
+ 	 	 	 <div class="item" style="background-image:url(images/banner/bg3.jpg);display:none;">
+ 	 	 		 <div class="container">
+ 	 	 			  <div class="description">
+ 	 	 			  	 <h1>我的校园</h1> 
+ 	 	 			  	 <span>成立于多少年前，校风校史优良3</span>
+ 	 	 			  </div>
+ 	 	 			  <div class="slide_img">
+ 	 	 			  	 <img alt="me" src="images/banner/img3.png" height="400px" width="300px"/>
+ 	 	 			  </div>
+ 	 	 	     </div>
+ 	 	 	 </div>
+ 	 	 	  <div class="item" style="background-image:url(images/banner/bg2.jpg);display:none;">
+ 	 	 		 <div class="container">
+ 	 	 			   <div class="description">
+ 	 	 			  	 <h1>我的校园</h1> 
+ 	 	 			  	 <span>成立于多少年前，校风校史优良4</span>
+ 	 	 			  </div>
+ 	 	 			  <div class="slide_img">
+ 	 	 			  	 <img alt="me" src="images/banner/img2.png" height="400px" width="300px"/>
+ 	 	 			  </div>
+ 	 	 	     </div>
+ 	 	 	 </div>
+  	 	 </div>
+  	 	  <!-- banner-inner end -->
+  	 	  <!-- banner-cricle start -->
+  	 	 <div class="banner-cricle">
+  	 	 	 <ul>
+	  	 	 	 <li class="active"></li>
+	  	 	 	 <li></li>
+	  	 	 	 <li></li>
+	  	 	 	 <li></li>
+  	 		 </ul>
+  	 	 </div>
+  	 	  <!-- banner-cricle end -->
+  	 	  <!-- banenr-ear start -->
+  	 	 <div class="banner-ear"> 
+  	 	 	<a href="#" class="" onclick="btnChange(this);" data-item="pre"><i class="fa fa-chevron-left"></i></a>
+  	 	 	<a href="#" class="" onclick="btnChange(this);" data-item="next"><i class="fa fa-chevron-right"></i></a>
+  	 	 </div>
+  	 	 <!-- banenr-ear end -->
+  	 </section>
+  	 <!-- section banner end -->
+  	 
+  	 <!-- section faculty start -->
+  	 <section id="faculty">
+  	 	<div class="container">
+  	 		<div class="fac_title wow fadeInDown" >
+  	 			<h1>学院院系</h1>
+  	 			<p>中国中国中国中国中国中国中国中国中国中国</p>
+  	 			<p>中国中国中国中国中国中国中国中国中国中国</p>
+  	 		</div>
+  	 		<div class="fac_content">
+  	 			<div class="fac_con_wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				 <i class="fa fa-cloud-download"></i>
+                     <h2>软件学院</h2>
+                     <h3>Lorem ipsum dolor sit</h3>
+  	 			</div>
+  	 			<div class="fac_con_wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				 <i class="fa fa-cloud-download"></i>
+                     <h2>艺术学院</h2>
+                     <h3>Lorem ipsum</h3>
+  	 			</div>
+  	 			<div class="fac_con_wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				 <i class="fa fa-cloud-download"></i>
+                     <h2>经贸管理学院</h2>
+                     <h3>Lorem ipsum dolor </h3>
+  	 			</div>
+  	 			<div class="fac_con_wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				 <i class="fa fa-cloud-download"></i>
+                     <h2>机电学院</h2>
+                     <h3>Lorem ipsum dolor </h3>
+  	 			</div>
+  	 			<div class="fac_con_wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				 <i class="fa fa-cloud-download"></i>
+                     <h2>外国语学院</h2>
+                     <h3>Lorem ipsum dolor </h3>
+  	 			</div>
+  	 			<div class="fac_con_wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				 <i class="fa fa-cloud-download"></i>
+                     <h2>Easy to customize</h2>
+                     <h3>Lorem ipsum dolor </h3>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </section>
+  	 <!-- section faculty end -->
+  	 <!-- section corporation start -->
+  	 <section id="corporation">
+  	 	<div class="container">
+  	 		<div class="cor_title">
+  	 			  <h1>社团</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+  	 		</div>
+  	 		<div class="cor_content">
+  	 			<div class="cor_con_wrap wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				<div class="logo">
+  	 					<img alt="corporation"  src="images/services1.png" width="81px" height="81px">
+  	 				</div>
+  	 				<div class="description">
+  	 					<h3 class="des_title">读者协会</h3>
+                        <p>Lorem ipsum dolor sit ame </p>
+  	 				</div>
+  	 			</div>
+  	 			<div class="cor_con_wrap wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				<div class="logo">
+  	 					<img alt="corporation"  src="images/services2.png" width="81px" height="81px">
+  	 				</div>
+  	 				<div class="description">
+  	 					<h3 class="des_title">英语角协会</h3>
+                        <p>Lorem ipsum dolor sit ame </p>
+  	 				</div>
+  	 			</div>
+  	 			<div class="cor_con_wrap wow slideInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
+  	 				<div class="logo">
+  	 					<img alt="corporation"  src="images/services3.png" width="81px" height="81px">
+  	 				</div>
+  	 				<div class="description">
+  	 					<h3 class="des_title">志愿者协会</h3>
+                        <p>Lorem ipsum dolor sit ame </p>
+  	 				</div>
+  	 			</div>
+  	 			<div class="cor_con_wrap wow slideInRight" data-wow-duration="900ms" data-wow-delay="600ms">
+  	 				<div class="logo">
+  	 					<img alt="corporation"  src="images/services4.png" width="81px" height="81px">
+  	 				</div>
+  	 				<div class="description">
+  	 					<h3 class="des_title">交谊舞协会</h3>
+                        <p>Lorem ipsum dolor sit ame </p>
+  	 				</div>
+  	 			</div>
+  	 			<div class="cor_con_wrap wow slideInRight" data-wow-duration="900ms" data-wow-delay="600ms">
+  	 				<div class="logo">
+  	 					<img alt="corporation"  src="images/services5.png" width="81px" height="81px">
+  	 				</div>
+  	 				<div class="description">
+  	 					<h3 class="des_title">轮滑协会</h3>
+                        <p>Lorem ipsum dolor sit ame </p>
+  	 				</div>
+  	 			</div>
+  	 			<div class="cor_con_wrap wow slideInRight" data-wow-duration="900ms" data-wow-delay="600ms">
+  	 				<div class="logo">
+  	 					<img alt="corporation"  src="images/services6.png" width="81px" height="81px">
+  	 				</div>
+  	 				<div class="description">
+  	 					<h3 class="des_title">艺术中心</h3>
+                        <p>Lorem ipsum dolor sit ame </p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </section>
+  	 <!-- section corporation start -->
+  	 <!-- footer start -->
+  	 <footer>
+  	 	<div class="spilt"></div>
+  	 	<div class="content">
+  	 		Copyright &copy; 2015 <<杨乐乐>> All rights reserved.
+  	 	</div>
+  	 </footer>
+  	  <!-- footer end -->
+  	 
+  	 
+  	 
+  	 	<script type="text/javascript">
+  		$(function(){
+  			 //初始化  wow js
+		     new WOW().init();
+  			//页面初始化，第一张banner图，文字和slide图片显示
+  			$(".banner-inner").find(".item").eq(0).find(".description").addClass('animated slideInLeft').css({"display":"block"});
+			$(".banner-inner").find(".item").eq(0).find(".slide_img").addClass('animated fadeInUp').css({"display":"block"});
+  			//圆圈切换banner
+			$(".banner-cricle").find("li").bind("click",function(){
+  				//获取li索引
+  				var index = $(this).index();
+  				//遍历banner对象
+  				$(".banner-inner").find(".item").each(function(i,item){
+  						if(index == i){//如果li索引和banner索引相同，则显示双方
+  							//联动显示banner图
+  							$(this).show().siblings().css({"display":"none"});
+  							//显示描述
+  							$(this).find(".description").addClass('animated slideInLeft').css({"display":"block"});
+  							//显示slide图片
+  							$(this).find(".slide_img").addClass('animated fadeInUp').css({"display":"block"});
+  							//切换li激活状态
+  							$(".banner-cricle").find("li").eq(i).addClass("active").siblings("li").removeClass("active");
+  						}
+  				});
+  				
+  			  
+  			});
+  			
+  			/* //next按钮切换banner
+  			var next= 0;
+			$(".banner-ear").find("a:last-child").bind("click",function(){
+				//获取当前激活li的索引
+				next =  $(".banner-cricle").find("li.active").index();
+				var length = $(".banner-cricle").find("li").length;
+				next++;
+				if(next == length){
+					next = 0;
+				}
+				//切换li激活状态
+				$(".banner-cricle").find("li").eq(next).addClass("active").siblings("li").removeClass("active");
+				//联动显示banner图
+				$(".banner-inner").find(".item").eq(next).show().siblings().css({"display":"none"});
+				//显示描述
+				$(".banner-inner").find(".item").eq(next).find(".description").addClass('animated slideInLeft').css({"display":"block"});
+				//显示slide图片
+				$(".banner-inner").find(".item").eq(next).find(".slide_img").addClass('animated fadeInUp').css({"display":"block"});
+			});
+			
+			//pre按钮切换banner
+			var pre = 0;
+			$(".banner-ear").find("a:first-child").bind("click",function(){
+				//获取当前激活li的索引
+				pre =  $(".banner-cricle").find("li.active").index();
+				var length = $(".banner-cricle").find("li").length;
+				pre--;
+				if(pre == -1){
+					pre = length-1;
+				}
+				//切换li激活状态
+				$(".banner-cricle").find("li").eq(pre).addClass("active").siblings("li").removeClass("active");
+				//联动显示banner图
+				$(".banner-inner").find(".item").eq(pre).show().siblings().css({"display":"none"});
+				//显示描述
+				$(".banner-inner").find(".item").eq(pre).find(".description").addClass('animated slideInLeft').css({"display":"block"});
+				//显示slide图片
+				$(".banner-inner").find(".item").eq(pre).find(".slide_img").addClass('animated fadeInUp').css({"display":"block"});
+			}); */
+  		});
+  		
+  		//按钮banner图切换
+  		var nextStr = "next";
+  		var preStr = "pre";
+		function btnChange(obj){
+			var item = $(obj).data("item");
+			//获取当前激活的li索引
+			var index  = $(".banner-cricle").find("li.active").index();
+			//获取li的总长度
+			var length = $(".banner-cricle").find("li").length;
+			if(item == nextStr){//点击next按钮
+				index++;
+				if(index == length){
+					index = 0;
+				}
+				//切换li激活状态 和 联动显示banner图
+				changeBanner(index);
+			}else if(item == preStr){//点击pre按钮
+				index--;
+				if(index == -1){
+					index = length-1;
+				}
+				//切换li激活状态 和 联动显示banner图
+				changeBanner(index);
+			}else{
+				alert("出错啦。。。。。");
+			}
+		}
+		//切换li激活状态 和 联动显示banner图
+		function changeBanner(index){
+			//切换li激活状态
+			$(".banner-cricle").find("li").eq(index).addClass("active").siblings("li").removeClass("active");
+			//联动显示banner图
+			$(".banner-inner").find(".item").eq(index).show().siblings().css({"display":"none"});
+			//显示描述
+			$(".banner-inner").find(".item").eq(index).find(".description").addClass('animated slideInLeft').css({"display":"block"});
+			//显示slide图片
+			$(".banner-inner").find(".item").eq(index).find(".slide_img").addClass('animated fadeInUp').css({"display":"block"});
+		}
+		
+  	</script>
+  </body>
+</html>
