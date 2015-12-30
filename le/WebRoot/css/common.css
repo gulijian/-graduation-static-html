@@ -1,3 +1,11 @@
+/**
+	autor:杨乐乐
+	class:应用1402
+	description：公共样式
+	date:2015-12-28 21:05:36
+	version:1.0
+*/
+/* 全局 css start*/
 * {
 	margin: 0px;
 	padding: 0px;
@@ -38,8 +46,10 @@ h3 {
 h4 {
 	font-size: 16px;
 }
+/* 全局 css end*/
 
-/* navbar start*/
+
+/* header#navbar start*/
 .active {
 	background: #c52d2f;
 }
@@ -97,7 +107,7 @@ h4 {
 .navbar .navbar_right ul li:hover ul {
 	display: block;
 }
-/*navbar end*/
+/*header#navbar end*/
 
 /*footer start*/
 footer {
