@@ -2,14 +2,46 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
+  <meta name="Author" content="杨乐乐">
+  <meta name="Keywords" content="联系我们">
+  <meta name="Description" content="联系我们">
+  <title>联系我们</title>
    <!--  page css -->
     <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
 	<!-- page js -->
 	<script type="text/javascript"  src="../js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript"  src="../js/wow.min.js"></script>
+	
+	<style type="text/css">
+		/*contact-info start*/
+		#contact-info{border:1px slid red;}
+		#contact-info .con_info_title{height:100px;text-align:center;padding:40px;}
+		#contact-info .con_info_title h2{font-size:36px;color:#4e4e4e;font-weight: 600;}
+		#contact-info .con_info_title .lead{margin:10px;color:#4e4e4e;}
+		#contact-info .con_info_content{height:500px;background-image: url("../images/map.jpg"); background-repeat: no-repeat; background-size: cover;}
+		#contact-info .con_info_content .left{padding:0 50px;width:20%;float:left;margin-top:200px;margin-left:250px;}
+		#contact-info .con_info_content .left img{border-radius:50%;}
+		#contact-info .con_info_content .right{float:right;width:30%;height:300px;margin-top:150px;margin-right:300px;}
+		#contact-info .con_info_content .right address p{margin:10px 0px;}
+		#contact-info .con_info_content .right address span,li{font-family: 'Open Sans', sans-serif;font-style:normal;}
+		#contact-info .con_info_content .right address p span:first-child{font-weight:bold;}
+		/*contact-info end*/
+		/*#contact-page start*/
+		#contact-page .con_page_title{height:50px;text-align:center;padding:40px;}
+		#contact-page .con_page_title h2{font-size:36px;color:#4e4e4e;font-weight: 600;}
+		#contact-page .con_page_title .lead{margin:10px;color:#4e4e4e;}
+		#contact-page .con_page_content{height:300px;padding:0px 100px;}
+		#contact-page .con_page_content .form-group{margin:40px;}
+		#contact-page .con_page_content .form-group label span{color:red;}
+	    #contact-page .con_page_content .form-group input{border:1px solid #B0B0C1;height:25px;line-height:25px;box-shadow: 5px 3px 5px #888;}
+		#contact-page .con_page_content .form-group button{height:30px;width:100px;transition:all 1s;background:rgb(49,176,213);color:white;border-radius:5px;}
+		#contact-page .con_page_content .form-group button:hover{background:red;cursor:pointer;}
+		#contact-page .con_page_content .left{width:30%;float:left;margin-left:150px;}
+		#contact-page .con_page_content .right{width:30%;float:right;margin-right:150px}
+		/*#contact-page end*/
+		footer {clear:both;position:relative;top:0px;}
+	</style>
   </head>
   
   <body>
@@ -17,27 +49,22 @@
   	 <header>
   	 	<nav class="navbar">
   	 		<div class="navbar_item navbar_left">
-  	 			<a href="index.jsp">
-  	 				<img alt="logo" src="images/logo.png">
+  	 			<a href="../index.html">
+  	 				<img alt="logo" src="../images/logo.png">
   	 			</a>
   	 		</div>
   	 		<div class="navbar_item navbar_right">
   	 			<ul>
-  	 				<li><a href="javascript:void(0)" class="active">首页</a></li>
+  	 				<li><a href="../index.html">首页</a></li>
   	 				<li><a href="javascript:void(0)">相册</a></li>
   	 				<li><a href="javascript:void(0)">博客</a></li>
-  	 				<li><a href="javascript:void(0)">日志</a>
+  	 				<li><a href="javascript:void(0)">旅行</a></li>
+  	 				<li><a href="html/contact.html" class="active">联系我们</a></li>
+  	 				<li><a href="javascript:void(0)">设置</a>
   	 					<ul class="wow fadeInUp" data-wow-duration="500ms">
-  	 						<li><a href="javascript:void(0)">首页</a></li>
-		  	 				<li><a href="javascript:void(0)">相册</a></li>
-		  	 				<li><a href="javascript:void(0)">博客</a></li>
-  	 					</ul>
-  	 				</li>
-  	 				<li><a href="javascript:void(0)">旅行</a>
-  	 					<ul class="wow fadeInUp" data-wow-duration="500ms">
-  	 						<li><a href="javascript:void(0)">首页</a></li>
-		  	 				<li><a href="javascript:void(0)">相册</a></li>
-		  	 				<li><a href="javascript:void(0)">博客</a></li>
+  	 						<li><a href="400.html">400页面</a></li>
+  	 						<li><a href="404.html">404页面</a></li>
+		  	 				<li><a href="500.html">500页面</a></li>
   	 					</ul>
   	 				</li>
   	 			</ul>
@@ -46,9 +73,116 @@
   	 </header>
   	 <!-- header navbar end  -->
     
+    <!-- section contact-info start -->
+    <section id="contact-info">
+    	<div class="container">
+    		<div class="con_info_title">
+    			 <h2>How to Reach Us?</h2>
+           		 <p class="lead">Lorem ipsum dolor sicing elit</p>
+    		</div>
+    		<div class="con_info_content">
+    			<div class="left">
+    				<img alt="shool_logo"  src="../images/school_logo.jpg" width="200px" height="200px">
+    			</div>
+    			<div class="right">
+    				 <address>
+                          <p>
+                          	  <span>学院地址:</span>
+                          	  <span>江苏省昆山市巴城镇湖滨北路288号 </span>
+                          </p>
+                          <p>
+          					   <span>邮编:</span>   
+          					   <span>215311</span>   
+          				  </p>
+          				  <p>
+          				  		<span>来院路线:</span>
+          				  </p>
+          				  <ul>
+      				  			<li>
+      				  				<p>（一）公共交通（苏州）</p>
+      				  				<span >
+      				  					&nbsp;在苏州汽车北站（距苏州火车站约2公里）乘 到巴城 的公共汽车
+      				  					可直达学院，车程约40分钟。此公交车每天只有四班，在苏州的发车时间是：
+      				  					8:00、11:00、14:00、16:30。
+      				  				</span>
+      				  			</li>
+      				  			<li>
+      				  				<p>（二）公共交通（昆山）</p>
+      				  				<ul>
+      				  					<li>&nbsp;1、昆山火车站北广场：乘公交118路直达学院；</li>
+      				  					<li>&nbsp;2、昆山南站（高铁站）：乘公交159路直达学院；</li>
+      				  					<li>&nbsp;3、昆山汽车南站：乘公交16路、88路，在“昆山南站”站下，转乘159路直达学院。</li>
+      				  				</ul>
+      				  			</li>
+          				  	</ul>
+                      </address>
+                 </div>
+    		</div>
+    	</div>
+    </section>
+    <!-- section contact-info end -->
+    
+    <!-- section contact-page start -->
+    <section id="contact-page">
+    	<div class="container">
+    		<div class="con_page_title">
+    			 <h2>Drop Your Message</h2>
+           		 <p class="lead">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+    		<div class="con_page_content">
+    			<form action="#" method="post">
+    				<div class="left">
+    					<div class="form-group">
+                            <label>Name <span>*</span> </label>
+                            <input type="text" name="name"  required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email <span>*</span></label>
+                            <input type="email" name="email"  required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone <span>*</span></label>
+                            <input type="number" >
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" >
+                        </div>                 
+    				</div>
+    				 <div class="right">
+    				 	<div class="form-group">
+                            <label>Subject <span>*</span></label>
+                            <input type="text" name="subject"  required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message <span>*</span></label>
+                            <textarea name="message" id="message" cols="30" rows="7" ></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit"  required="required">Submit</button>
+                        </div>
+    				 </div>      
+    			</form>
+    		</div>
+    	</div>
+    </section>
+    <!-- section contact page end -->
+    
+     <!-- footer start -->
+  	 <footer>
+  	 	<div class="spilt"></div>
+  	 	<div class="content">
+  	 		Copyright &copy; 2015 <<杨乐乐>> All rights reserved.
+  	 	</div>
+  	 </footer>
+  	 <!-- footer end -->
     
     
-    
-    
+    <script type="text/javascript">
+    	$(function(){
+    		//初始化  wow js
+		     new WOW().init();
+    	});
+    </script>
   </body>
 </html>
