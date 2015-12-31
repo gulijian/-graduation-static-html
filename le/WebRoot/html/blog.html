@@ -6,18 +6,40 @@
   <meta name="Keywords" content="博客，文章，书籍">
   <meta name="Description" content="沉淀的心灵">
   <title>博客</title>
-   <!--  page css -->
+    <!--  page css -->
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css">
 	<!-- page js -->
-	<script type="text/javascript"  src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript"  src="../js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript"  src="../js/wow.min.js"></script>
-	
+	<script type="text/javascript"  src="../js/jquery.fullPage.min.js"></script>
 	<style type="text/css">
-		
-		
-		
+		header{position: fixed;z-index:100;width:100%;}
+		.section .sec_content .sec_con_title{position:relative;top:-10px;text-align:center;}
+		.section .sec_content .sec_con_title h1{color:#fff;}
+		.section .sec_content .sec_con_article{position:relative;}
+		.section .sec_content .sec_con_article .sec_article_logo{float:left;margin-left:200px;margin-top:80px;display:none;}
+		.section .sec_content .sec_con_article .sec_article_content{width:40%;height:400px;float:right;margin-top:30px;margin-right:150px;}
+		.section .sec_content .sec_con_article .sec_article_content article span{margin:7px 0px;display:block;}
+		.section1 .sec_content .sec_con_article .sec_article_content article:nth-child(2){margin-top:10px;}
+		.section1 .sec_content .sec_con_article .sec_article_content article:nth-child(3){margin-top:30px;}
+		.section2 .sec_content .sec_con_article .sec_article_content article:nth-child(2){margin-top:10px;}
+		.section2 .sec_content .sec_con_article .sec_article_content article:nth-child(3){margin-top:30px;}
+		.section3 .sec_content .sec_con_article .sec_article_content article:nth-child(2){margin-top:10px;}
+		.section3 .sec_content .sec_con_article .sec_article_content article:nth-child(3){margin-top:30px;}
+		.section3 .sec_content .sec_con_article .sec_article_content article:nth-child(4){margin-top:30px;}
+		.section4 .sec_content .sec_con_article .sec_article_content article:nth-child(2){margin-top:10px;}
+		.section4 .sec_content .sec_con_article .sec_article_content article:nth-child(3){margin-top:20px;}
+		.section4 .sec_content .sec_con_article .sec_article_content article:nth-child(4){margin-top:20px;}
+		.section4 .sec_content .sec_con_article .sec_article_content article:nth-child(5){margin-top:20px;}
+		.section4 .sec_content .sec_con_article .sec_article_content article:nth-child(6){margin-top:20px;}
 		footer {clear:both;position:relative;top:0px;}
+	</style>
+	<style>
+		#fp-nav ul li a.active span,.fp-slidesNav ul li a.active span {background:#E4A9DD;}
+		#fp-nav ul li a span,.fp-slidesNav ul li a span {width: 13px;height: 13px;border: 1px solid #443E37;}
+		#fp-nav ul li, .fp-slidesNav ul li {width: 16px;height: 26px;margin: 7px;}
 	</style>
   </head>
   
@@ -35,13 +57,13 @@
   	 				<li><a href="../index.html">首页</a></li>
   	 				<li><a href="photo.html">相册</a></li>
   	 				<li><a href="blog.html" class="active">博客</a></li>
-  	 				<li><a href="javascript:void(0)">旅行</a></li>
+  	 				<li><a href="media.html">多媒体</a></li>
   	 				<li><a href="contact.html">联系我们</a></li>
-  	 				<li><a href="javascript:void(0)">设置</a>
+  	 				<li><a href="javascript:void(0)">页面</a>
   	 					<ul class="wow fadeInUp" data-wow-duration="500ms">
-  	 						<li><a href="400.html">400页面</a></li>
-  	 						<li><a href="404.html">404页面</a></li>
-		  	 				<li><a href="500.html">500页面</a></li>
+  	 						<li><a href="error/400.html">400页面</a></li>
+  	 						<li><a href="error/404.html">404页面</a></li>
+		  	 				<li><a href="error/500.html">500页面</a></li>
   	 					</ul>
   	 				</li>
   	 			</ul>
@@ -50,22 +72,164 @@
   	 </header>
   	 <!-- header navbar end  -->
     
+    <div id="blog">
+		<div class="section section1">
+			<div class="container">
+				<div class="sec_content">
+					<div class="sec_con_title">
+						<h1>书名:《平凡的世界》</h1>
+					</div>
+					<div class="sec_con_article">
+						<div class="sec_article_logo">
+							<img alt="平凡的世界" src="../images/book1.jpg" height="350px" width="280px">
+						</div>
+						<div class="sec_article_content">
+							<h2>内容简介</h2>
+							<article>
+								<span>&nbsp;《平凡的世界》是中国作家路遥创作的一部百万字的小说。这是一部全景式</span>
+								<span>地表现中国当代城乡社会生活的长篇小说，全书共三部。该书以中国70年代中</span>
+								<span>期到80年代中期十年间为背景，通过复杂的矛盾纠葛，以孙少安和孙少平两兄</span>
+								<span>弟为中心，刻画了当时社会各阶层众多普通人的形象；劳动与爱情、挫折与追</span>
+								<span>求痛苦与欢乐、日常生活与巨大社会冲突纷繁地交织在一起，深刻地展示了普</span>
+								<span>通人在大时代历史进程中所走过的艰难曲折的道路。</span>
+							</article>
+							<article>
+								<span>&nbsp;1991年3月《平凡的世界》获中国第三届茅盾文学奖。第一版于1986年12月</span>
+								<span>在文联出版社出版；第二版于2012年3月在北京十月文艺于出版社正式发行。</span>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section2">
+			<div class="container">
+				<div class="sec_content">
+					<div class="sec_con_title">
+						<h1>书名:《人性的弱点》</h1>
+					</div>
+					<div class="sec_con_article">
+						<div class="sec_article_logo">
+								<img alt="人性的弱点" src="../images/book2.jpg" height="350px" width="280px">
+						</div>
+						<div class="sec_article_content">
+							<h2>内容简介</h2>
+							<article>
+								<span>&nbsp;该书汇集了卡耐基的思想精华和最激动人心的内容，是作者最成功的励志经</span>
+								<span>典，出版后立即获得了广大读者的欢迎，成为西方世界最持久的人文畅销书。</span>
+								<span>无数读者通过阅读和实践书中介绍的各种方法，不仅走出困境，有的还成为世</span>
+								<span>人仰慕的杰出人士。只要不断研读本书，相信你也可以发掘自己的无穷潜力，</span>
+								<span>创造辉煌的人生。</span>
+							</article>
+							<article>
+								<span>&nbsp;世界成功学第一书，戴尔·卡内基成功学教育全书一！世界上最畅销、最经</span>
+								<span>典、最实用的为人处世参考书。“成人教育之父”戴尔·卡耐基的思想精华和</span>
+								<span>最激动人心的内容，帮助你解决你所面临的最大问题：如何在你的日常生活、</span>
+								<span>商务活动与社会交往中与人打交道，并有效地影响他人；如何击败人类的生存</span>
+								<span>之敌——忧虑，以创造一种幸福美好的人生。</span>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section3">
+			<div class="container">
+				<div class="sec_content">
+					<div class="sec_con_title">
+						<h1>书名:《三体》</h1>
+					</div>
+					<div class="sec_con_article">
+						<div class="sec_article_logo">
+								<img alt="三体" src="../images/book3.jpg" height="350px" width="280px">
+						</div>
+						<div class="sec_article_content">
+							<h2>内容简介</h2>
+							<article>
+								<span>&nbsp;《三体》三部曲，又名“地球往事”三部曲，作者刘慈欣。该系列小说由</span>
+								<span>《三体》、《黑暗森林》、《死神永生》三部小说组成，于2006年至2010年</span>
+								<span>由《科幻世界》杂志连载，出版。</span>
+							</article>
+							<article>
+								<span>&nbsp;《三体》三部曲讲述了地球文明在宇宙中的兴衰历程。作品对人类历史、</span>
+								<span>物理学、天文学、社会学及哲学等均有涉及，从科幻的角度对人性进行了深</span>
+								<span>入探讨，全书格局宏大，立意高远，被誉为迄今为止中国当代最杰出的科幻</span>
+								<span>小说，是中国科幻文学的里程碑之作，将中国科幻推上了世界的高度。</span>
+							</article>
+							<article>
+								<span>&nbsp;2014年底小说第一部的英文版在美国上市，反响热烈， 并于2015年获得</span>
+								<span>美国科幻奇幻协会“星云奖”等五个奖项提名。 2015年8月23日，《三体》</span>
+								<span>获第73届世界科幻大会颁发的雨果奖最佳长篇小说奖  ，这是亚洲科幻小说</span>
+								<span>首次获得雨果奖。 10月，作者刘慈欣因该作获得全球华语科幻文学最高成</span>
+								<span>就奖。</span>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section4">
+			<div class="container">
+				<div class="sec_content">
+					<div class="sec_con_title">
+						<h1>书名:《唐骏自传》</h1>
+					</div>
+					<div class="sec_con_article">
+						<div class="sec_article_logo">
+								<img alt="唐骏自传" src="../images/book4.jpg" height="350px" width="280px">
+						</div>
+						<div class="sec_article_content">
+							<h2>内容简介</h2>
+							<article>
+								<span>&nbsp;从普通程序员到微软中国总裁，从盛大总裁到新华都总裁兼CEO，再到港澳</span>
+								<span>资讯董事长，首次实现中国商界的MBO，他屡次重新出发，在通往终极职业经</span>
+								<span>理人的道路上，他是如何创造和把握机会的?他的成功之道是什么?</span>
+							</article>
+							<article>
+								<span>&nbsp;本书是中国第一职业经理人唐骏的首部人生职场自传，讲述了唐骏的20年职</span>
+								<span>场沉浮和50年人生感悟。</span>
+							</article>
+							<article>
+								<span>&nbsp;在书中，唐骏全面揭秘了"学历门"的幕后真相，系统讲述了"学历门"事件的</span>
+								<span>起因、经过和结尾，并做了深刻的自我反思和总结，还原一个真实的唐骏。</span>
+							</article>
+							<article>
+								<span>&nbsp;本书还爆料了有关微软、盛大、新华都、新浪、云南白药等公司的一些商业</span>
+								<span>"内幕"，有关唐骏和比尔盖茨、鲍尔默、柳传志、任正非、陈天桥、陈发树等</span>
+								<span>商界名流交往的趣闻轶事……</span>
+							</article>
+							<article>
+								<span>&nbsp;唐骏还在书中分享了大量实用的知识，包括职业经理人生存法则，职场潜规</span>
+								<span>则，唐骏式谈判艺术，唐骏式演讲技巧，唐骏式政府公关课等等。</span>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
    
-    
-     <!-- footer start -->
-  	 <footer>
-  	 	<div class="spilt"></div>
-  	 	<div class="content">
-  	 		Copyright &copy; 2015 【杨乐乐】 All rights reserved.
-  	 	</div>
-  	 </footer>
-  	 <!-- footer end -->
-    
     
     <script type="text/javascript">
     	$(function(){
     		//初始化  wow js
 		     new WOW().init();
+		    $(".section1").find(".sec_article_logo").addClass('animated rollIn').css({"display":"block"});
+    		$("#blog").fullpage({
+    			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+    			'navigation': true,
+    			afterLoad: function(anchorLink, index){
+    				if(index == 2){
+    					$(".section2").find(".sec_article_logo").addClass('animated slideInLeft').css({"display":"block"});
+    				}
+    				if(index == 3){
+    					$(".section3").find(".sec_article_logo").addClass('animated fadeInUp').css({"display":"block"});
+    				}
+    				if(index == 4){
+    					$(".section4").find(".sec_article_logo").addClass('animated rotateIn').css({"display":"block"});
+    				}
+    			}
+    		});
     	});
     </script>
   </body>

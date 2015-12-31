@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="杨乐乐">
+  <meta name="Keywords" content="音乐，视屏">
+  <meta name="Description" content="身心的解放">
+  <title>多媒体</title>
+    <!--  page css -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../js/video/video-js.css">
+	<!-- page js -->
+	<script type="text/javascript"  src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript"  src="../js/wow.min.js"></script>
+	<script type="text/javascript"  src="../js/video/video.js"></script>
+	<style type="text/css">
+		body{background-color: rgba(7, 20, 30, 0.7);}
+		#media .music img{padding:5px;background:#DAECC7;border-radius:50%;position:relative;float:right;top:10px;right:20px;
+		transition:all .5s;}
+		#media .music img:hover{background:#c52d2f;cursor:pointer;}
+		@keyframes logoRotate{
+			0%{transform:rotate(0deg);}
+			50%{transform:rotate(180deg);}
+			100%{transform:rotate(360deg);}
+		}
+		#media .video{border:1px solid blueposition:relative;margin:20px 180px	;}
+		footer {clear:both;position:fixed;bottom:0px;width:100%;}
+	</style>
+  </head>
+  
+  <body>
+     <!-- header navbar start  -->
+  	 <header>
+  	 	<nav class="navbar">
+  	 		<div class="navbar_item navbar_left">
+  	 			<a href="../index.html">
+  	 				<img alt="logo" src="../images/logo.png" >
+  	 			</a>
+  	 		</div>
+  	 		<div class="navbar_item navbar_right">
+  	 			<ul>
+  	 				<li><a href="../index.html">首页</a></li>
+  	 				<li><a href="photo.html">相册</a></li>
+  	 				<li><a href="blog.html" >博客</a></li>
+  	 				<li><a href="media.html" class="active">多媒体</a></li>
+  	 				<li><a href="contact.html">联系我们</a></li>
+  	 				<li><a href="javascript:void(0)">页面</a>
+  	 					<ul class="wow fadeInUp" data-wow-duration="500ms">
+  	 						<li><a href="error/400.html">400页面</a></li>
+  	 						<li><a href="error/404.html">404页面</a></li>
+		  	 				<li><a href="error/500.html">500页面</a></li>
+  	 					</ul>
+  	 				</li>
+  	 			</ul>
+  	 		</div>
+  	 	</nav>
+  	 </header>
+  	 <!-- header navbar end  -->
+    
+    <!-- media start -->
+    <div id="media">
+		<div class="music">
+			<audio id="myAudio">
+		 		 <source src="../video/bugua.mp3" type="audio/mpeg">
+			</audio>
+			<img id="music_logo" class="active" style="animation:logoRotate  1s linear infinite;" alt="logo" src="../images/music_logo.jpg" width="80px;" height="80px">
+		</div>
+		<div class="video">
+			<video id="example_video_1" class="video-js vjs-big-play-centered  vjs-default-skin" controls preload="none" width="1000" height="500"
+		      poster="../images/moon.jpg"
+		      data-setup="{}">
+		    <source src="../video/01.mp4" type='video/mp4' />
+		    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+		    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+			</video>
+		</div>
+	</div>
+	 <!-- media end -->
+   
+    <!-- footer start -->
+  	 <footer>
+  	 	<div class="spilt"></div>
+  	 	<div class="content">
+  	 		Copyright &copy; 2015 【杨乐乐】 All rights reserved.
+  	 	</div>
+  	 </footer>
+  	 <!-- footer end -->
+    
+    <script type="text/javascript">
+    	$(function(){
+    		 //初始化  wow js
+		     new WOW().init();
+    		 //获取audio元素
+    		 var au= document.getElementById("myAudio");
+    		 au.play();//播放音乐
+    		 $("#music_logo").bind("click",function(){
+    			 var mark = $(this).attr("class");
+    			 if(mark == "active"){
+    				//删除动画样式
+    				$(this).removeAttr("style").css({"background":"#c52d2f"});
+    				//删除激活状态
+    				$(this).removeAttr("class");
+    				//暂停音乐
+    				au.pause();
+    			 }else{
+    				 //激活
+    				 $(this).attr("class","active");
+    				 //添加动画
+    				 $(this).css({"animation":"logoRotate  1s linear infinite","background":"#DAECC7"});
+    				 //播放音乐
+    				 au.play();;
+    			 }
+    		 });
+    		 //浏览器不支持html5使用flash播放
+    		 videojs.options.flash.swf = "../js/video/video-js.swf";
+		});
+    </script>
+  </body>
+</html>

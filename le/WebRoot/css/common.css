@@ -50,10 +50,6 @@ h4 {
 
 
 /* header#navbar start*/
-.active {
-	background: #c52d2f;
-}
-
 .navbar {
 	background: #101010;
 	position: relative;
@@ -78,6 +74,9 @@ h4 {
 .navbar .navbar_right ul li {
 	float: left;
 	margin: 0px 20px;
+}
+.navbar .navbar_right ul li>a.active {
+	background: #c52d2f;
 }
 
 .navbar .navbar_right ul li>a {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+	<title>404页面</title>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+	<style type="text/css">
+		body{background:url("../../images/404.jpg") no-repeat;background-size:cover;}
+		.tip .time{margin:70px;auto;text-align:center;font-size:35px;}
+		.tip .time #tp{color:red;} 
+		.tip .content{text-align:center;font-size:40px;margin-top:354px;}
+		.tip .content a{transition:background .5s,color .5s;text-decoration:none;padding:3px;color:red;background:rgb(92,184,92);border-radius:5px;}
+		.tip .content a:hover{background:rgb(91,192,222);color:#fff;}
+	</style>
+  </head>
+  <body>
+  		<div class="tip">
+  			<div  class="time">
+  				<span>404错误</span> <span id="tp">5</span> <span>秒后返回首页</span>
+  			</div>
+  			<div  class="content">
+  				<a href="../../index.html">点我立即返回首页</a>
+  			</div>
+  		</div>
+  		<script type="text/javascript">
+  			$(function(){
+  				var tp = $("#tp").html();
+  				//定时器：5s返回首页
+  				setInterval(function(){
+  					tp--;
+  					$("#tp").html(tp);
+  					if(tp == 0){
+  						window.location.href="../../index.html";
+  					};
+  				},1000);
+  				
+  			});
+  		</script>
+  </body>
+</html>

@@ -10,14 +10,26 @@
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
 	<!-- page js -->
-	<script type="text/javascript"  src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript"  src="../js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript"  src="../js/wow.min.js"></script>
 	
 	<style type="text/css">
+		body{background:#eee;}
+		.photo .container{height:460px;width:75%;margin:45px auto;position:relative;}
+		.photo .container img{padding:10px 10px 15px;background:#fff;border:1px solid #ddd;position:absolute;transition:transform 1s;z-index:1;}
+	    .photo .container img:hover{transform:rotate(0deg);transform:scale(1.4);box-shadow:10px 10px 15px #ccc;z-index:5;}
+		.photo .container .pic1{top:30px;left:40px;transform:rotate(20deg);z-index:0;}
+		.photo .container .pic2{top:30px;left:200px;transform:rotate(-10deg);}
+		.photo .container .pic3{top:30px;left:380px;transform:rotate(-10deg);z-index:0;}
+		.photo .container .pic4{top:40px;left:550px;transform:rotate(-20deg);}
+		.photo .container .pic5{top:45px;left:750px;transform:rotate(20deg);z-index:}
+		.photo .container .pic6{top:200px;left:750px;transform:rotate(-20deg);}
+		.photo .container .pic7{top:200px;left:60px;transform:rotate(-10deg);z-index:0;}
+		.photo .container .pic8{top:240px;left:160px;transform:rotate(10deg);}
+		.photo .container .pic9{top:210px;left:330px;transform:rotate(-10deg);}
+		.photo .container .pic10{top:210px;left:480px;transform:rotate(10deg);z-index:2;}
 		
-		
-		
-		footer {clear:both;position:relative;top:0px;}
+		footer {clear:both;position:fixed;bottom:0px;width:100%;}
 	</style>
   </head>
   
@@ -35,13 +47,13 @@
   	 				<li><a href="../index.html">首页</a></li>
   	 				<li><a href="photo.html" class="active">相册</a></li>
   	 				<li><a href="blog.html">博客</a></li>
-  	 				<li><a href="javascript:void(0)">旅行</a></li>
+  	 				<li><a href="media.html">多媒体</a></li>
   	 				<li><a href="contact.html">联系我们</a></li>
-  	 				<li><a href="javascript:void(0)">设置</a>
+  	 				<li><a href="javascript:void(0)">页面</a>
   	 					<ul class="wow fadeInUp" data-wow-duration="500ms">
-  	 						<li><a href="400.html">400页面</a></li>
-  	 						<li><a href="404.html">404页面</a></li>
-		  	 				<li><a href="500.html">500页面</a></li>
+  	 						<li><a href="error/400.html">400页面</a></li>
+  	 						<li><a href="error/404.html">404页面</a></li>
+		  	 				<li><a href="error/500.html">500页面</a></li>
   	 					</ul>
   	 				</li>
   	 			</ul>
@@ -49,8 +61,23 @@
   	 	</nav>
   	 </header>
   	 <!-- header navbar end  -->
-    
-   
+  	 
+  	 <!-- photo start -->
+    <div class="photo">
+    	<div class="container">
+    		<img class="pic1" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic2" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic3" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic4" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic5" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic6" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic7" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic8" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic9" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    		<img class="pic10" alt="" src="../images/album/pic1.jpg" width="200px" height="200px;">
+    	</div>
+    </div>
+    <!-- photo end -->
     
      <!-- footer start -->
   	 <footer>
